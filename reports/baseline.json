@@ -1,0 +1,1080 @@
+{
+  "meta": {
+    "timestamp": "2026-10-28 15:00",
+    "model": "deepseek-v4.1-flash",
+    "dataset": "evals/questions.jsonl",
+    "documents": 6,
+    "chunks": 56
+  },
+  "summary": {
+    "questions": 30,
+    "valid": 30,
+    "errors": 0,
+    "error_rate": 0.0,
+    "answerable": 27,
+    "unanswerable": 3,
+    "retrieval_recall": 1.0,
+    "citation_recall": 1.0,
+    "citation_rate": 1.0,
+    "answer_score": 1.962962962962963,
+    "answer_score_pct": 98.14814814814815,
+    "faithfulness": 1.0,
+    "refusal_accuracy": 1.0,
+    "avg_latency": 14.311766629231473,
+    "prompt_tokens": 163608,
+    "completion_tokens": 13392,
+    "cached_tokens": 87040,
+    "judged": 30
+  },
+  "categories": {
+    "agent": {
+      "questions": 7,
+      "valid": 7,
+      "errors": 0,
+      "error_rate": 0.0,
+      "answerable": 7,
+      "unanswerable": 0,
+      "retrieval_recall": 1.0,
+      "citation_recall": 1.0,
+      "citation_rate": 1.0,
+      "answer_score": 2.0,
+      "answer_score_pct": 100.0,
+      "faithfulness": 1.0,
+      "refusal_accuracy": null,
+      "avg_latency": 14.62588728598452,
+      "prompt_tokens": 48942,
+      "completion_tokens": 3846,
+      "cached_tokens": 24192,
+      "judged": 7
+    },
+    "api": {
+      "questions": 4,
+      "valid": 4,
+      "errors": 0,
+      "error_rate": 0.0,
+      "answerable": 4,
+      "unanswerable": 0,
+      "retrieval_recall": 1.0,
+      "citation_recall": 1.0,
+      "citation_rate": 1.0,
+      "answer_score": 1.75,
+      "answer_score_pct": 87.5,
+      "faithfulness": 1.0,
+      "refusal_accuracy": null,
+      "avg_latency": 16.72423690604046,
+      "prompt_tokens": 33467,
+      "completion_tokens": 2038,
+      "cached_tokens": 15104,
+      "judged": 4
+    },
+    "fastapi": {
+      "questions": 3,
+      "valid": 3,
+      "errors": 0,
+      "error_rate": 0.0,
+      "answerable": 3,
+      "unanswerable": 0,
+      "retrieval_recall": 1.0,
+      "citation_recall": 1.0,
+      "citation_rate": 1.0,
+      "answer_score": 2.0,
+      "answer_score_pct": 100.0,
+      "faithfulness": 1.0,
+      "refusal_accuracy": null,
+      "avg_latency": 13.57642004173249,
+      "prompt_tokens": 8198,
+      "completion_tokens": 1042,
+      "cached_tokens": 3840,
+      "judged": 3
+    },
+    "interview": {
+      "questions": 2,
+      "valid": 2,
+      "errors": 0,
+      "error_rate": 0.0,
+      "answerable": 2,
+      "unanswerable": 0,
+      "retrieval_recall": 1.0,
+      "citation_recall": 1.0,
+      "citation_rate": 1.0,
+      "answer_score": 2.0,
+      "answer_score_pct": 100.0,
+      "faithfulness": 1.0,
+      "refusal_accuracy": null,
+      "avg_latency": 28.95718689612113,
+      "prompt_tokens": 25185,
+      "completion_tokens": 1509,
+      "cached_tokens": 13696,
+      "judged": 2
+    },
+    "ops": {
+      "questions": 4,
+      "valid": 4,
+      "errors": 0,
+      "error_rate": 0.0,
+      "answerable": 4,
+      "unanswerable": 0,
+      "retrieval_recall": 1.0,
+      "citation_recall": 1.0,
+      "citation_rate": 1.0,
+      "answer_score": 2.0,
+      "answer_score_pct": 100.0,
+      "faithfulness": 1.0,
+      "refusal_accuracy": null,
+      "avg_latency": 11.584842770709656,
+      "prompt_tokens": 14604,
+      "completion_tokens": 1634,
+      "cached_tokens": 8704,
+      "judged": 4
+    },
+    "rag": {
+      "questions": 5,
+      "valid": 5,
+      "errors": 0,
+      "error_rate": 0.0,
+      "answerable": 5,
+      "unanswerable": 0,
+      "retrieval_recall": 1.0,
+      "citation_recall": 1.0,
+      "citation_rate": 1.0,
+      "answer_score": 2.0,
+      "answer_score_pct": 100.0,
+      "faithfulness": 1.0,
+      "refusal_accuracy": null,
+      "avg_latency": 11.028993016574532,
+      "prompt_tokens": 14811,
+      "completion_tokens": 1609,
+      "cached_tokens": 9344,
+      "judged": 5
+    },
+    "unanswerable": {
+      "questions": 3,
+      "valid": 3,
+      "errors": 0,
+      "error_rate": 0.0,
+      "answerable": 0,
+      "unanswerable": 3,
+      "retrieval_recall": null,
+      "citation_recall": null,
+      "citation_rate": null,
+      "answer_score": null,
+      "answer_score_pct": null,
+      "faithfulness": null,
+      "refusal_accuracy": 1.0,
+      "avg_latency": 13.043771125376225,
+      "prompt_tokens": 12950,
+      "completion_tokens": 869,
+      "cached_tokens": 8320,
+      "judged": 3
+    },
+    "uv": {
+      "questions": 2,
+      "valid": 2,
+      "errors": 0,
+      "error_rate": 0.0,
+      "answerable": 2,
+      "unanswerable": 0,
+      "retrieval_recall": 1.0,
+      "citation_recall": 1.0,
+      "citation_rate": 1.0,
+      "answer_score": 2.0,
+      "answer_score_pct": 100.0,
+      "faithfulness": 1.0,
+      "refusal_accuracy": null,
+      "avg_latency": 10.407778395805508,
+      "prompt_tokens": 5451,
+      "completion_tokens": 845,
+      "cached_tokens": 3840,
+      "judged": 2
+    }
+  },
+  "results": [
+    {
+      "id": "q01",
+      "question": "Agent 的本质是什么?为什么说它是一个 while 循环?",
+      "category": "agent",
+      "must_refuse": false,
+      "answer": "我会先在知识库中检索相关内容。我再打开笔记文档，查看完整论述。**结论：Agent 的本质是「带工具和消息状态的 while 循环」[1]。**\n\n**为什么说它是一个 while 循环**\n\n- 核心骨架只有 10 行：每轮把 `messages` 和 `tools` 发给模型，把模型返回的 assistant 消息追加进历史；如果响应里没有 `tool_calls`，就结束循环；如果有，就逐个执行工具，并把结果以 `role=tool` 消息回填，然后进入下一轮 [2]。\n- 无论以后用 LangGraph、OpenAI Agents SDK 还是自己写，骨架永远是这 10 行；框架额外提供的是持久化、并行、重试、可观测性、多 Agent 编排、人类审批 [2]。\n- 项目里也把这一点作为核心结论写在最前面：Agent = 带工具和消息状态的 while 循环 [1]，代码对应 `loop.py` 的 `while not done` [3]。\n\n**两个关键前提，解释了为什么必须是循环**\n\n- 模型是无状态的，「记住上下文」等于每次把完整 messages 再发一遍 [2]（见 agent-notes 第 1 节）。所以状态必须由循环自己维护。\n- 模型只负责「说」，不负责「做」：它只输出「我想调用 get_weather，参数是 {...}」，执行函数、回填结果都是你的代码干的 [9]。因此「模型 → 执行 → 再问模型」这个往返天然就是一个循环。\n\n**循环里必须处理的边界**\n\n- 工具内部异常要捕获成文本回填，别让进程挂掉；一直循环调工具要用 `max_steps` 强制刹车 [8][9]。\n- 参数可能不是合法 JSON、可能缺字段，都要回填错误让模型重发 [9]。\n\n**一点补充**：循环里每轮都要重发前 N-1 轮，上下文成本是 O(轮数²)，这也是 prompt caching 存在的理由 [2]；而工具 schema 和 system prompt 每轮都一样，天生适合缓存 [2]。",
+      "retrieved_sources": [
+        "agent-lab-readme.md",
+        "agent-notes.md",
+        "agent-lab-readme.md",
+        "03-uv-fastapi.md",
+        "06-interview-prep.md",
+        "06-interview-prep.md",
+        "agent-lab-readme.md",
+        "agent-notes.md",
+        "agent-notes.md",
+        "06-interview-prep.md"
+      ],
+      "cited_sources": [
+        "agent-lab-readme.md",
+        "agent-notes.md",
+        "agent-lab-readme.md",
+        "agent-notes.md",
+        "agent-notes.md"
+      ],
+      "retrieval_recall": 1.0,
+      "citation_recall": 1.0,
+      "elapsed": 21.677224750164896,
+      "error": "",
+      "judge": {
+        "score": 2,
+        "faithful": true,
+        "refused": false,
+        "reason": "回答完整覆盖三个参考要点：本质是带工具和消息状态的 while 循环、tool_calls 执行回填后进入下一轮、框架额外提供持久化/并行/重试/可观测性/多 Agent 编排/人类审批，且所有结论均有引用支撑，无编造。"
+      }
+    },
+    {
+      "id": "q02",
+      "question": "assistant 与 tool 之间完成一次工具调用,需要交换哪几条消息?",
+      "category": "agent",
+      "must_refuse": false,
+      "answer": "我先检索知识库中关于工具调用消息结构的资料。**结论：一次工具调用往返需要交换 4 条消息**（不含 system/user 的话，核心是 2 条新增消息：一条 assistant + 一条 tool）。\n\n**完整消息序列**\n\n1. `system`（可选，放最前面）：规则、人设、工具使用约定 [3]\n2. `user`：用户输入，例如「北京天气?」[3]\n3. `assistant`：`content` 为空，带 `tool_calls`（含 `id`、`name`、`arguments`）[3][7]\n4. `tool`：带 `tool_call_id` 和工具执行结果 `content` [3][7]\n\n之后模型再返回一条 `assistant` 自然语言回答作为最终结果 [3][7]。\n\n**要点**\n\n- 模型不执行任何东西，只输出「我想调用 get_weather，参数是 {...}」；执行由你的代码完成 [7]。\n- `arguments` 是字符串不是对象，可能非法 JSON、缺字段、多字段，必须容错并回填错误 [7]。\n- assistant 那条消息要**原样**存回历史（包括 `tool_calls`），否则下一轮模型不知道自己在等什么 [5][7]。\n- `role=tool` 的消息必须紧跟在带 `tool_calls` 的 assistant 消息后面，`tool_call_id` 一一对应；顺序错了 OpenAI 直接 400 [3][5]。\n- 一次响应可包含多个 `tool_calls`（并行工具调用），按顺序执行、逐条回填 [7]。\n- 教学脚本 `step3_tools.py` 会打印出这 4 条消息的完整 JSON，可对照 `loop.py` 的 `stream()` 看哪一行存 `tool_calls`、哪一行回填结果 [8]。",
+      "retrieved_sources": [
+        "agent-notes.md",
+        "agent-lab-readme.md",
+        "agent-notes.md",
+        "agent-lab-readme.md",
+        "06-interview-prep.md",
+        "04-rag-practice.md",
+        "agent-notes.md",
+        "agent-lab-readme.md",
+        "agent-lab-readme.md"
+      ],
+      "cited_sources": [
+        "agent-notes.md",
+        "06-interview-prep.md",
+        "agent-notes.md",
+        "agent-lab-readme.md"
+      ],
+      "retrieval_recall": 1.0,
+      "citation_recall": 1.0,
+      "elapsed": 17.490712417289615,
+      "error": "",
+      "judge": {
+        "score": 2,
+        "faithful": true,
+        "refused": false,
+        "reason": "覆盖了 assistant 带 tool_calls、role=tool 带 tool_call_id 回填、assistant 生成最终回答三个要点，引用可支撑，无编造。"
+      }
+    },
+    {
+      "id": "q03",
+      "question": "为什么 role=tool 的消息必须带 tool_call_id?顺序错了会怎样?",
+      "category": "agent",
+      "must_refuse": false,
+      "answer": "我先检索一下知识库。**结论：`tool_call_id` 是工具结果与模型那次工具调用之间的唯一对应关系；如果顺序错了或 id 对不上，OpenAI 接口会直接返回 400。**\n\n要点：\n\n1. **为什么必须带 `tool_call_id`**\n   - `role=tool` 的消息是“你的代码”写的工具结果，规范要求它必须带 `tool_call_id` [1]。\n   - 模型是无状态的，每次都要把完整 messages 重发一遍；它靠 `tool_call_id` 把这条结果对应回自己上一轮发出的某个 `tool_calls[i].id` [1][7]。\n   - 一次响应可以包含多个 `tool_calls`（并行工具调用），此时要按顺序执行、逐条回填，因此必须靠 id 区分每条结果属于哪个调用 [7]。\n   - 另外，assistant 那条带 `tool_calls` 的消息要原样存回历史，否则下一轮模型不知道自己在等什么 [7]。\n\n2. **顺序错了会怎样**\n   - `role=tool` 的消息必须紧跟在带 `tool_calls` 的 assistant 消息后面，且 `tool_call_id` 一一对应；顺序错了，OpenAI 会直接返回 400 [1]。\n   - 面试资料里同样强调：`tool_call_id` 必须一一对应，否则接口返回 400 [2]。\n\n3. **正确顺序示例**（system → user → assistant(tool_calls) → tool(tool_call_id) → assistant 最终回答）[1]；完整往返流程是：带 `tools` 请求 → 模型返回 `finish_reason=tool_calls` → 原样存回 assistant 消息 → 执行函数并以 `role=tool` + `tool_call_id` 回填 → 再次请求得到最终回答 [2][7]。\n\n补充：资料里没有提到“顺序错但 id 正确”时是否有更细的报错文案，只说了会 400 [1][2]。",
+      "retrieved_sources": [
+        "agent-notes.md",
+        "06-interview-prep.md",
+        "agent-lab-readme.md",
+        "agent-notes.md",
+        "05-incident-playbook.md",
+        "agent-lab-readme.md",
+        "agent-notes.md",
+        "agent-lab-readme.md"
+      ],
+      "cited_sources": [
+        "agent-notes.md",
+        "06-interview-prep.md",
+        "agent-notes.md"
+      ],
+      "retrieval_recall": 1.0,
+      "citation_recall": 1.0,
+      "elapsed": 8.566725292243063,
+      "error": "",
+      "judge": {
+        "score": 2,
+        "faithful": true,
+        "refused": false,
+        "reason": "回答覆盖了 tool_call_id 的对应关系、多个工具调用的一一对应以及顺序或 ID 错误导致 400 的全部要点，且引用片段能支撑结论。"
+      }
+    },
+    {
+      "id": "q04",
+      "question": "流式返回的 tool_calls arguments 为什么要拼接?能每个 chunk 都 json.loads 吗?",
+      "category": "agent",
+      "must_refuse": false,
+      "answer": "我先检索一下知识库里关于流式 tool_calls 的内容。**结论：不能每个 chunk 都 `json.loads`。** 流式返回的 `arguments` 是被切碎的 JSON 字符串片段，单个 chunk 里往往不是合法 JSON，必须按 `index` 分组累积拼接，等流结束（`finish_reason=tool_calls`）后再解析一次。\n\n**要点：**\n\n1. **参数是被切碎的片段，不是完整 JSON。** 笔记里的示例中，第一个 chunk 的 `arguments` 是 `{\"ci`，第二个是 `ty\":\"北京\"}`，单独看都不是合法 JSON，只有拼起来才是 `{\"city\":\"北京\"}` [1]。\n\n2. **正确做法：按 `index` 分组，用 `+=` 拼接。** 因为一次响应可能有多个并行 tool_calls，所以要按 `tool_calls[i].index` 归组，各自累积，流结束才是完整 JSON [1]。\n\n3. **每个 chunk 都解析会直接失败。** 对 `{\"ci` 这种半截字符串调 `json.loads` 必然抛异常，而且即使某个 chunk 恰好能解析，得到的也只是残缺对象，不是完整参数 [1]。\n\n4. **解析失败要有容错路径。** 参数是字符串，可能非法、缺字段、多字段，必须容错并回填错误让模型重发；代码里对应 `ToolArgumentError` → 错误文本回填 → 模型重试（`llm.py:parse_args`）[3][4]。\n\n5. **拼接完再校验。** 拿到完整字符串后 `json.loads`，再检查必填字段/类型，不合格让模型重试一次，不要假设模型一定听话 [1]。\n\n补充：`content` 片段同理要拼接，`reasoning_content` 要和正式回答分开累积 [1]。另外流式下 `usage` 默认不返回，需要 `stream_options: {\"include_usage\": true}`，部分兼容服务不认要能降级重试 [1]。\n\n（这条正好是笔记文末自测题第 2 题 [2]，答案在 `llm.py:_parse_sse()` 和 `scripts/step2_stream.py` 的手写版里 [1]。）",
+      "retrieved_sources": [
+        "agent-notes.md",
+        "agent-notes.md",
+        "agent-lab-readme.md",
+        "06-interview-prep.md",
+        "06-interview-prep.md"
+      ],
+      "cited_sources": [
+        "agent-notes.md",
+        "agent-notes.md",
+        "agent-lab-readme.md",
+        "06-interview-prep.md"
+      ],
+      "retrieval_recall": 1.0,
+      "citation_recall": 1.0,
+      "elapsed": 13.263673916924745,
+      "error": "",
+      "judge": {
+        "score": 2,
+        "faithful": true,
+        "refused": false,
+        "reason": "覆盖了按 index 分片、累加拼接、单 chunk 解析失败三个要点，引用能支撑结论，无编造。"
+      }
+    },
+    {
+      "id": "q05",
+      "question": "prompt caching 命中的前提是什么?哪些因素会破坏命中?",
+      "category": "agent",
+      "must_refuse": false,
+      "answer": "我会先在知识库中检索 prompt caching 的相关内容。**结论：prompt caching 命中的前提是「输入前缀逐字节完全一致」；任何改动前缀内容的因素都会导致 miss。**\n\n**命中的前提**\n- 服务端对**输入前缀**做 KV cache，下一次请求如果前缀逐字节相同，就直接复用，按缓存价计费（通常便宜 5-10 倍），首 token 也更快 [2]。\n- 结构上要把稳定内容放前面（system、工具定义、长文档），变化内容放后面（用户问题），即 `[system][工具定义][历史][本轮问题]` 中前段是「稳定前缀，可缓存」[2][6]。\n- 各家的最小长度门槛：OpenAI 大约 1024 token 起、按 128 对齐；DeepSeek 64 token 起；Anthropic 需要显式写 `cache_control: {\"type\":\"ephemeral\"}` 打断点 [2]。\n\n**破坏命中的因素**\n- **前缀必须完全一致**：一个空格、一个时间戳、工具顺序变化都会导致 miss [2]。\n- 在 system 里塞动态内容（例如 `当前时间: 2026-10-28 09:45:03`）会破坏命中 [2]；自测题也把「system prompt 里应该避免放什么」作为考点 [4]。\n- 缓存有 TTL（几分钟到几小时），冷启动第一次必然 miss [2]。\n\n**验证方式**\n- 命中量看 `usage.prompt_tokens_details.cached_tokens`（DeepSeek 是 `prompt_cache_hit_tokens`）[2]。\n- 实测数据：第 1 次输入 2983、命中 0（0.0%）；第 2 次输入 2983、命中 2944（98.7%）；第 3 次输入 2980、命中 2944（98.8%）[2]。\n\n补充：Agent 场景里工具 schema 和 system prompt 每次请求都一样，天生适合缓存 [2]。资料里没有提到除上述之外的其他破坏因素（例如多轮历史被重排、工具结果截断策略变化对命中率的具体影响），如需这部分细节，还需要补充关于缓存失效机制的专门资料。",
+      "retrieved_sources": [
+        "agent-lab-readme.md",
+        "agent-notes.md",
+        "agent-lab-readme.md",
+        "agent-notes.md",
+        "04-rag-practice.md",
+        "06-interview-prep.md",
+        "03-uv-fastapi.md"
+      ],
+      "cited_sources": [
+        "agent-notes.md",
+        "agent-notes.md",
+        "06-interview-prep.md"
+      ],
+      "retrieval_recall": 1.0,
+      "citation_recall": 1.0,
+      "elapsed": 14.520743167027831,
+      "error": "",
+      "judge": {
+        "score": 2,
+        "faithful": true,
+        "refused": false,
+        "reason": "覆盖了前缀逐字节一致、稳定内容前置、时间戳/工具顺序破坏命中、TTL与冷启动不命中等全部要点，引用可支撑结论，无编造。"
+      }
+    },
+    {
+      "id": "q06",
+      "question": "OpenAI、DeepSeek、Anthropic 的 prompt cache 最小长度和接入方式有什么不同?",
+      "category": "agent",
+      "must_refuse": false,
+      "answer": "我会在知识库中检索 prompt cache 的相关信息。我再查一下 Anthropic 的接入细节和 step5_cache 脚本。## 结论\n\n三家在**最小可缓存长度**和**接入方式**上的差异，知识库里只有一处集中记录，来自 `agent-notes.md` 的 prompt caching 笔记 [6]：\n\n| 厂商 | 最小长度 | 接入方式 |\n| --- | --- | --- |\n| OpenAI | 大约 1024 token 起，按 128 对齐 | 自动，无需额外参数 [6] |\n| DeepSeek | 64 token 起 | 自动，无需额外参数 [6] |\n| Anthropic | 资料里没有提到 | 必须显式用 `cache_control: {\"type\":\"ephemeral\"}` 打断点 [6] |\n\n## 要点\n\n- **共同原理**：服务端对输入前缀做 KV cache，前缀逐字节相同才复用，按缓存价计费（通常便宜 5-10 倍），首 token 也更快 [6]。\n- **前缀必须完全一致**：一个空格、一个时间戳、工具顺序变化都会导致 miss [6]。所以稳定内容（system、工具定义、长文档）放前面，变化内容（用户问题）放后面 [6]。\n- **命中量怎么看**：OpenAI 看 `usage.prompt_tokens_details.cached_tokens`，DeepSeek 看 `prompt_cache_hit_tokens` [6]。\n- **缓存有 TTL**（几分钟到几小时），冷启动第一次必然 miss [6]。\n- **Agent 场景天生适合缓存**：工具 schema 和 system prompt 每次请求都一样，别在 system 里塞当前时间这类动态内容 [6]。\n\n## 资料缺口\n\n关于 Anthropic 的最小可缓存长度（以及各家 TTL 的具体数值、缓存写入是否额外收费），**资料里没有提到**。要补全的话，需要各家官方 prompt caching 文档的原文，特别是 Anthropic 的 `cache_control` 断点规则和最小 token 门槛。",
+      "retrieved_sources": [
+        "06-interview-prep.md",
+        "04-rag-practice.md",
+        "agent-notes.md",
+        "agent-lab-readme.md",
+        "03-uv-fastapi.md",
+        "agent-notes.md",
+        "agent-lab-readme.md",
+        "agent-notes.md",
+        "agent-lab-readme.md",
+        "04-rag-practice.md",
+        "06-interview-prep.md"
+      ],
+      "cited_sources": [
+        "agent-notes.md"
+      ],
+      "retrieval_recall": 1.0,
+      "citation_recall": 1.0,
+      "elapsed": 13.325303458143026,
+      "error": "",
+      "judge": {
+        "score": 2,
+        "faithful": true,
+        "refused": false,
+        "reason": "覆盖三家最小长度与接入方式差异，Anthropic 最小长度明确说明资料未给出，引用[6]支撑相关结论。"
+      }
+    },
+    {
+      "id": "q07",
+      "question": "json_schema 的 strict 模式有哪些硬性要求?",
+      "category": "agent",
+      "must_refuse": false,
+      "answer": "我会在知识库中检索这个主题。我再打开笔记文档，查看完整上下文。**结论：** 知识库中只明确记录了两条 strict 模式的硬性要求，没有更完整的清单。\n\n**要点：**\n\n- schema 中必须设置 `additionalProperties: false` [2]\n- 所有字段都必须写进 `required` [2]\n- 这两条是 OpenAI strict 模式的要求；strict 模式由服务端约束解码，因此可靠性高于 `json_object` 和「在 prompt 里贴 schema 并手动 parse」[2]\n- 即使启用了 strict，工程上仍要做校验和修复：先用 `json.loads` 解析，再检查必填字段和类型，不合格就让模型重试一次 [2]\n\n**资料里没有提到的内容：** 除上述两条之外的其他限制，例如嵌套对象是否必须全部声明 `additionalProperties: false`、是否支持 `oneOf`、`anyOf`、`$ref`、可选字段如何表达、枚举和数组约束、`maxLength` 之类的关键字是否受限，以及 strict 模式对递归 schema 或字段数量的上限。这些内容在知识库中都没有提到；如果需要，得补充 OpenAI structured outputs 官方文档或 `scripts/step4_structured.py` 的完整代码说明。\n\n另外，笔记里有一道自测题问「strict 模式为什么要求 `additionalProperties: false`」，但文档只给出了题目，没有给出答案 [1]。",
+      "retrieved_sources": [
+        "agent-notes.md",
+        "agent-notes.md",
+        "agent-lab-readme.md",
+        "agent-lab-readme.md",
+        "agent-lab-readme.md"
+      ],
+      "cited_sources": [
+        "agent-notes.md",
+        "agent-notes.md"
+      ],
+      "retrieval_recall": 1.0,
+      "citation_recall": 1.0,
+      "elapsed": 13.536828000098467,
+      "error": "",
+      "judge": {
+        "score": 2,
+        "faithful": true,
+        "refused": false,
+        "reason": "回答覆盖了全部三个参考要点（additionalProperties: false、所有字段进 required、服务端约束解码），并明确说明资料中未提及其他限制，无编造。"
+      }
+    },
+    {
+      "id": "q08",
+      "question": "agent-lab 有哪些工具?分别负责什么?",
+      "category": "api",
+      "must_refuse": false,
+      "answer": "我会在知识库中检索与 agent-lab 工具相关的信息。检索到的片段只给出了工具概览，我打开 README 查看工具注册表的详细说明。## 结论\n\nagent-lab 内置三个工具，分别负责**查天气、读写本地文件、算数学**；它们都按「名字 + 描述 + JSON Schema + 函数」的格式注册在工具注册表里 [1][4]。\n\n## 三个工具\n\n| 工具 | 文件 | 职责 |\n| --- | --- | --- |\n| 天气 | `tools/weather.py` | 查天气，数据源是 Open-Meteo，免费无需 Key [1] |\n| 文件 | `tools/files.py` | 读本地文件、按关键词搜索；沙箱限制在 `ALLOWED_ROOT` 内 [1] |\n| 计算 | `tools/calc.py` | 算数学，用 AST 白名单求值，不用 `eval` [1] |\n\n## 补充要点\n\n- **统一抽象**：`tools/base.py` 定义 `Tool = 名字 + 描述 + JSON Schema + 函数` [1]；`execute()` 永不抛异常，工具内部异常会被捕获成文本回填给模型，避免进程挂掉 [7]。\n- **注册方式**：新工具要写 schema、写函数、在 `default_registry()` 里注册，并加一条单测 [4]。\n- **安全边界**：文件工具先 `resolve()` 再 `is_relative_to()`，`../` 和软链接都逃不出去，`.env`、`.git`、私钥后缀直接拒绝 [1]；计算工具用 AST 白名单、指数上限 1000 [1]。\n- **执行方式**：工具目前是串行执行，文档提到可改成 `asyncio.gather` 并行 [1]。\n\n## 资料缺口\n\n文档只列了这三个内置工具，没有给出每个工具的具体参数名和 schema 字段。如果你需要参数级别的细节，还需要 `tools/weather.py`、`tools/files.py`、`tools/calc.py` 的源码或 API 文档，这类资料知识库里没有。",
+      "retrieved_sources": [
+        "agent-lab-readme.md",
+        "agent-lab-readme.md",
+        "06-interview-prep.md",
+        "agent-lab-readme.md",
+        "agent-notes.md",
+        "06-interview-prep.md",
+        "agent-notes.md",
+        "agent-lab-readme.md"
+      ],
+      "cited_sources": [
+        "agent-lab-readme.md",
+        "agent-lab-readme.md",
+        "agent-notes.md"
+      ],
+      "retrieval_recall": 1.0,
+      "citation_recall": 1.0,
+      "elapsed": 15.743368832860142,
+      "error": "",
+      "judge": {
+        "score": 2,
+        "faithful": true,
+        "refused": false,
+        "reason": "覆盖天气、文件读取、数学计算及 ALLOWED_ROOT 沙箱限制，引用可支撑结论，无编造。"
+      }
+    },
+    {
+      "id": "q09",
+      "question": "agent-lab 用什么命令安装依赖和运行?还需要手动 activate 虚拟环境吗?",
+      "category": "api",
+      "must_refuse": false,
+      "answer": "我会在知识库中搜索相关信息。我再查看 README 中关于运行的部分，确认完整命令。**结论：安装依赖用 `uv sync`，运行用 `uv run agent`（或 `uv run uvicorn ...` 起 HTTP 服务），不需要手动 activate 虚拟环境。**\n\n要点：\n\n- **安装依赖**：`uv sync`。uv 会自动创建 `.venv` 并装好依赖，README 明确写了「不要再用 pip + venv」[2]。\n- **运行 CLI**：`uv run agent`；一次性提问用 `uv run agent --once \"...\"` [1]（见 README 第 21–45 行）。\n- **起 HTTP 服务**：`uv run uvicorn agentlab.server:create_app --factory --reload --port 8000` [5]。\n- **跑测试/检查**：`uv run pytest`、`uv run ruff check .` [5]。\n- **不需要 activate**：`uv run` 直接在项目环境里执行命令，不需要 `source .venv/bin/activate` [3]。传统 pip+venv 的三步（建 venv、activate、pip install）被 uv 合成一条命令 [3]。\n- 运行前要先 `cp .env.example .env` 并填好 `LLM_BASE_URL` / `LLM_API_KEY` / `LLM_MODEL`，这三个是必填项 [1][5]。\n\n补充：CI 场景建议用 `uv sync --locked`，锁文件过期会直接失败 [3]。",
+      "retrieved_sources": [
+        "agent-lab-readme.md",
+        "agent-lab-readme.md",
+        "03-uv-fastapi.md",
+        "06-interview-prep.md",
+        "agent-lab-readme.md",
+        "03-uv-fastapi.md"
+      ],
+      "cited_sources": [
+        "agent-lab-readme.md",
+        "agent-lab-readme.md",
+        "03-uv-fastapi.md",
+        "agent-lab-readme.md"
+      ],
+      "retrieval_recall": 1.0,
+      "citation_recall": 1.0,
+      "elapsed": 14.190629832912236,
+      "error": "",
+      "judge": {
+        "score": 2,
+        "faithful": true,
+        "refused": false,
+        "reason": "覆盖了 uv sync 自动建 .venv 装依赖、uv run 执行无需手动 activate、不再用 pip+venv 三个要点，引用可支撑，无编造。"
+      }
+    },
+    {
+      "id": "q10",
+      "question": "agent-lab 的文件工具做了哪些安全限制?",
+      "category": "api",
+      "must_refuse": false,
+      "answer": "我会在知识库中检索与 agent-lab 文件工具安全限制相关的内容。我再打开 README 中关于安全边界的部分，以获取更完整的细节。## 结论\n\nagent-lab 的文件工具主要做了**路径沙箱**和**敏感文件黑名单**两层限制，核心是 `_resolve()` 函数。\n\n## 要点\n\n**1. 路径沙箱（防止越界）**\n- 文件工具被限制在 `ALLOWED_ROOT` 目录内，该变量默认是当前目录 [1][7]。\n- `_resolve()` 先调用 `resolve()`，再调用 `is_relative_to()`，因此 `../` 这类相对路径穿越和软链接都无法逃出根目录 [2]。\n- 如果读到「路径越界」报错，处理方式是设置 `ALLOWED_ROOT` 或改传相对路径 [6]。\n\n**2. 敏感文件直接拒绝**\n- `.env`、`.git`、私钥后缀会被直接拒绝读取 [2][3]。\n\n**3. 配套的通用安全习惯**\n- 工具结果和用户输入都当作不可信内容处理 [3]。\n- 高风险动作（写文件、执行命令、付款）必须人工确认 [3]。也就是说，当前文件工具只做读取和关键词搜索，不提供写入能力 [1]。\n\n## 资料缺口\n\n文档只给出了上述规则，**没有**提到文件大小上限、读取行数上限、编码处理、符号链接白名单等更细的限制；如果需要这类细节，得看 `src/agentlab/tools/files.py` 的源码，而知识库里没有这份代码。",
+      "retrieved_sources": [
+        "agent-lab-readme.md",
+        "agent-lab-readme.md",
+        "06-interview-prep.md",
+        "03-uv-fastapi.md",
+        "06-interview-prep.md",
+        "agent-lab-readme.md",
+        "agent-lab-readme.md"
+      ],
+      "cited_sources": [
+        "agent-lab-readme.md",
+        "agent-lab-readme.md",
+        "06-interview-prep.md",
+        "agent-lab-readme.md",
+        "agent-lab-readme.md"
+      ],
+      "retrieval_recall": 1.0,
+      "citation_recall": 1.0,
+      "elapsed": 24.341261166147888,
+      "error": "",
+      "judge": {
+        "score": 2,
+        "faithful": true,
+        "refused": false,
+        "reason": "回答覆盖了全部三个参考要点（resolve后判断ALLOWED_ROOT、拒绝../和软链接、拒绝.env/.git/私钥），引用[2][3][7]能支撑结论，无编造。"
+      }
+    },
+    {
+      "id": "q11",
+      "question": "如果服务端不支持 stream_options.include_usage,agent-lab 怎么处理?",
+      "category": "api",
+      "must_refuse": false,
+      "answer": "我会在知识库中检索相关内容。我再查一下代码层面的具体实现细节。**结论：agent-lab 的做法是「自动去掉 `stream_options` 后重试」，即降级重试，而不是直接报错。**\n\n要点：\n\n- `usage` 在流式响应里默认不返回，需要显式加 `stream_options: {\"include_usage\": true}`；但有的兼容服务不认这个参数，所以代码要能降级重试 [1]。\n- README 的踩坑表里把这条列为已知问题：「流式没有 usage / 服务端不支持 `stream_options` / 代码会自动去掉重试」[2]。\n- 相关实现位置：SSE 解析在 `llm.py:_parse_sse()`，手写版在 `scripts/step2_stream.py` [1]。\n\n资料里没有提到的部分：\n\n- 去掉参数重试之后，如果仍然拿不到 usage，agent-lab 具体怎么兜底（比如是否本地估算 token 数、是否把 usage 记为 None）。知识库里只说了「自动去掉重试」这一步，没有写后续处理。\n- 重试的触发条件细节（是捕获 400 错误后重试，还是先探测服务端能力）也没有说明。\n\n如果需要确认这两点，还需要补充 `llm.py` 的源码或该模块的设计说明文档。",
+      "retrieved_sources": [
+        "agent-notes.md",
+        "agent-lab-readme.md",
+        "agent-lab-readme.md",
+        "agent-lab-readme.md",
+        "06-interview-prep.md",
+        "06-interview-prep.md",
+        "05-incident-playbook.md",
+        "agent-lab-readme.md",
+        "agent-notes.md",
+        "agent-lab-readme.md",
+        "agent-notes.md",
+        "06-interview-prep.md",
+        "06-interview-prep.md",
+        "agent-lab-readme.md"
+      ],
+      "cited_sources": [
+        "agent-notes.md",
+        "agent-lab-readme.md"
+      ],
+      "retrieval_recall": 1.0,
+      "citation_recall": 1.0,
+      "elapsed": 12.621687792241573,
+      "error": "",
+      "judge": {
+        "score": 1,
+        "faithful": true,
+        "refused": false,
+        "reason": "覆盖了去掉 stream_options 重试的要点，但未明确说明收到 400 后重试及无 usage 时仍能完成流式解析，且承认资料未提及兜底细节。"
+      }
+    },
+    {
+      "id": "q12",
+      "question": "uv 和 pip + venv 的核心区别是什么?",
+      "category": "uv",
+      "must_refuse": false,
+      "answer": "我会先在知识库中检索相关内容。**核心区别：uv 把「建虚拟环境 + 激活 + 装依赖」三步合成一条命令，并且自带记录完整解析结果的锁文件；pip + venv 需要手动分步执行，且 requirements.txt 默认只锁直接依赖。**\n\n要点：\n\n- **流程合并**：传统流程要手动做三件事——`python -m venv .venv`、`source .venv/bin/activate`、`pip install -r requirements.txt`；uv 把这三步合成一条命令 [1]。\n- **锁文件粒度**：`uv.lock` 记录的是完整解析结果（含传递依赖和哈希），所以 CI 和同事机器上装出来的版本完全一致；而 pip 的 `requirements.txt` 默认只锁直接依赖，容易出现「我这里是好的」[1]。\n- **常用命令**：`uv init` 创建 `pyproject.toml`；`uv add httpx` 添加依赖并写入 `pyproject.toml` + `uv.lock`；`uv sync` 严格按锁文件安装并自动创建 `.venv`；`uv run pytest` 在项目环境里执行命令，不需要 activate；`uv lock --upgrade` 升级锁文件 [1]。\n- **实践建议**：提交 `uv.lock`、不提交 `.venv`；CI 用 `uv sync --locked`，锁文件过期直接失败；不要在 Dockerfile 里用 `pip install -e .` 绕过锁文件 [1]。\n- 知识库中的项目文档也明确要求用 `uv sync` 安装（uv 会自动建 `.venv` 并装好依赖），不要再用 pip + venv [2]。\n\n补充说明：资料里没有提到 uv 的安装速度、用 Rust 实现等性能层面的对比，也没有 pip 与 uv 在依赖冲突解析算法上的细节；如果需要这部分内容，得补充 uv 官方文档或基准测试类资料。",
+      "retrieved_sources": [
+        "03-uv-fastapi.md",
+        "agent-lab-readme.md",
+        "03-uv-fastapi.md",
+        "agent-lab-readme.md"
+      ],
+      "cited_sources": [
+        "03-uv-fastapi.md",
+        "agent-lab-readme.md"
+      ],
+      "retrieval_recall": 1.0,
+      "citation_recall": 1.0,
+      "elapsed": 9.738216874655336,
+      "error": "",
+      "judge": {
+        "score": 2,
+        "faithful": true,
+        "refused": false,
+        "reason": "覆盖全部四个要点（uv sync 一条命令建环境装依赖、uv.lock 锁完整依赖和哈希、无需 activate、环境可复现），引用[1][2]支撑，且明确说明资料未涉及性能对比，无编造。"
+      }
+    },
+    {
+      "id": "q13",
+      "question": "CI 里为什么要用 uv sync --locked?",
+      "category": "uv",
+      "must_refuse": false,
+      "answer": "**结论：CI 里用 `uv sync --locked`，是为了让锁文件过期时直接失败，从而保证 CI 装出来的依赖与锁文件完全一致，避免“我这里是好的”这类环境差异问题 [1]。**\n\n要点：\n\n- `uv.lock` 记录的是完整解析结果，包括传递依赖和哈希，因此 CI 和同事机器上装出来的版本完全一致 [1]。\n- 相比之下，pip 的 `requirements.txt` 默认只锁直接依赖，容易出现“我这里是好的” [1]。\n- 文档明确的生产建议是：提交 `uv.lock`、不提交 `.venv`；CI 用 `uv sync --locked`，锁文件过期直接失败 [1]。\n- 另外不要在 Dockerfile 里用 `pip install -e .` 绕过锁文件 [1]。\n\n补充：普通 `uv sync` 是严格按锁文件安装并自动创建 `.venv` [1]；`--locked` 的额外作用是校验锁文件是否与 `pyproject.toml` 同步，不同步就报错。不过“`--locked` 与 `--frozen` 的具体区别”这一点，资料里没有提到，需要查 uv 官方 CLI 文档。",
+      "retrieved_sources": [
+        "03-uv-fastapi.md",
+        "agent-lab-readme.md",
+        "03-uv-fastapi.md",
+        "06-interview-prep.md",
+        "agent-lab-readme.md"
+      ],
+      "cited_sources": [
+        "03-uv-fastapi.md"
+      ],
+      "retrieval_recall": 1.0,
+      "citation_recall": 1.0,
+      "elapsed": 11.07733991695568,
+      "error": "",
+      "judge": {
+        "score": 2,
+        "faithful": true,
+        "refused": false,
+        "reason": "回答覆盖了严格按锁文件安装、锁文件过期直接失败、保证CI与本地依赖一致三个要点，且引用[1]能支撑相关结论，无编造。"
+      }
+    },
+    {
+      "id": "q14",
+      "question": "FastAPI 做流式响应需要设置哪些关键点?",
+      "category": "fastapi",
+      "must_refuse": false,
+      "answer": "我会在知识库中检索与 FastAPI 流式响应相关的内容。**结论：核心是用 `StreamingResponse` 返回 SSE 流，并注意媒体类型、代理缓冲和异常处理三个关键点。**\n\n**关键点**\n\n1. **必须用 `StreamingResponse`**：普通接口的返回值会被框架序列化成 JSON，要等全部计算完成后才返回；流式接口则要用 `StreamingResponse` 包装一个生成器，由生成器逐条 `yield` 数据 [1]。\n\n2. **媒体类型必须是 `text/event-stream`**：`media_type` 要设成 `text/event-stream`，并且每条消息以**两个换行**结束（如 `data: {...}\\n\\n`）[1]。\n\n3. **禁用反向代理缓冲**：Nginx 会缓冲响应，导致流式效果失效，需要加 `X-Accel-Buffering: no` 响应头，或关闭 `proxy_buffering` [1]。示例里还带了 `Cache-Control: no-cache` [1]。\n\n4. **异常处理受限**：生成器里抛异常时，连接已经建立，不能再修改状态码，只能发一条 `{\"type\":\"error\"}` 事件告知前端 [1]。\n\n**补充：协议选型**\n\n- 单向推送（模型输出、进度条）用 SSE，协议简单且自带断线重连；双向实时场景（协同编辑、语音）才用 WebSocket [5]。\n- 本项目聊天是「客户端 POST 一次、服务端流式返回」，SSE 足够，还能用普通 HTTP 调试 [5]。\n\n**资料里没有提到**：具体的超时设置、心跳保活（keep-alive 注释行）、客户端断开检测、`asyncio` 异步生成器写法等细节，如需这些内容，还需要补充 FastAPI 官方文档或生产部署相关的资料。",
+      "retrieved_sources": [
+        "03-uv-fastapi.md",
+        "03-uv-fastapi.md",
+        "06-interview-prep.md",
+        "agent-lab-readme.md",
+        "03-uv-fastapi.md",
+        "06-interview-prep.md",
+        "agent-lab-readme.md"
+      ],
+      "cited_sources": [
+        "03-uv-fastapi.md",
+        "03-uv-fastapi.md"
+      ],
+      "retrieval_recall": 1.0,
+      "citation_recall": 1.0,
+      "elapsed": 14.202707665972412,
+      "error": "",
+      "judge": {
+        "score": 2,
+        "faithful": true,
+        "refused": false,
+        "reason": "覆盖全部四个参考要点（StreamingResponse、text/event-stream、双换行、Cache-Control/X-Accel-Buffering），引用[1]可支撑，补充内容有[5]依据且明确声明资料缺失部分。"
+      }
+    },
+    {
+      "id": "q15",
+      "question": "SSE 和 WebSocket 应该怎么选?",
+      "category": "fastapi",
+      "must_refuse": false,
+      "answer": "我会先检索知识库中关于 SSE 和 WebSocket 的内容。**结论：按通信方向选择。单向推送用 SSE，双向实时用 WebSocket。**\n\n要点：\n\n- **单向推送**（模型输出、进度条）→ 选 SSE：协议简单，自带断线重连 [1]。\n- **双向实时**（协同编辑、语音）→ 选 WebSocket [1]。\n- 如果场景是「客户端 POST 一次、服务端流式返回」，SSE 就足够，而且能用普通 HTTP 调试 [1]。\n\n补充：知识库里的示例项目正是这种模式，服务端用 FastAPI + SSE 实现流式返回 [2]。\n\n如果你还想了解 SSE 的具体实现细节（比如在 FastAPI 里怎么写、怎么解析事件流），资料里目前只提到有相关脚本（如手写 SSE 解析），需要的话我可以再查。",
+      "retrieved_sources": [
+        "03-uv-fastapi.md",
+        "agent-lab-readme.md"
+      ],
+      "cited_sources": [
+        "03-uv-fastapi.md",
+        "agent-lab-readme.md"
+      ],
+      "retrieval_recall": 1.0,
+      "citation_recall": 1.0,
+      "elapsed": 17.415341916959733,
+      "error": "",
+      "judge": {
+        "score": 2,
+        "faithful": true,
+        "refused": false,
+        "reason": "回答覆盖了单向推送用SSE、双向实时用WebSocket、聊天流式输出用SSE足够三个要点，且引用[1]能支撑这些结论，无编造。"
+      }
+    },
+    {
+      "id": "q16",
+      "question": "FastAPI 里 def 和 async def 接口有什么区别?同步 Agent 循环应该放哪种?",
+      "category": "fastapi",
+      "must_refuse": false,
+      "answer": "我会在知识库中检索这个问题。**结论：`def` 接口跑在线程池，`async def` 接口跑在事件循环；同步 Agent 循环应该放在 `def` 里。**\n\n要点：\n\n- `def` 接口由 FastAPI 交给线程池执行，`async def` 接口直接在事件循环上运行 [1]。\n- 同步的 Agent 循环（例如使用 httpx 同步调用）放在 `def` 里最安全 [1]。\n- 如果写成 `async def` 却调用阻塞函数，会把整个事件循环卡住，导致所有请求一起变慢 [1]。\n\n补充一点相关但不同的内容：如果这个接口还要做流式输出，需要用 `StreamingResponse` 配合 `text/event-stream`，并注意反向代理缓冲（`X-Accel-Buffering: no`）等问题 [2]。不过资料里没有专门讨论「流式接口该用 `def` 还是 `async def`」这一点，如果需要这部分细节，还需要更具体的资料。",
+      "retrieved_sources": [
+        "03-uv-fastapi.md",
+        "03-uv-fastapi.md"
+      ],
+      "cited_sources": [
+        "03-uv-fastapi.md",
+        "03-uv-fastapi.md"
+      ],
+      "retrieval_recall": 1.0,
+      "citation_recall": 1.0,
+      "elapsed": 9.111210542265326,
+      "error": "",
+      "judge": {
+        "score": 2,
+        "faithful": true,
+        "refused": false,
+        "reason": "覆盖全部四个参考要点，引用[1]直接支撑结论，补充的流式内容有[2]依据且明确说明资料未涉及该细节。"
+      }
+    },
+    {
+      "id": "q17",
+      "question": "一个最小可用的 RAG 包含哪四步?",
+      "category": "rag",
+      "must_refuse": false,
+      "answer": "一个最小可用的 RAG 由四步组成 [1]：\n\n1. **解析**：把 PDF、DOCX、Markdown 转成纯文本，并保留页码或行号 [1]。\n2. **切块**：按语义边界切成 500–1000 字的片段，块之间留 10%–20% 重叠 [1]。\n3. **检索**：给每个块建索引，按相关度返回 top-k [1]。\n4. **生成**：把命中的块放进 prompt，要求模型只依据材料回答并标注来源 [1]。\n\n补充一点：这四步中，检索质量决定上限，模型只决定表达；检索错了，再强的模型也只能一本正经地胡说 [1]。",
+      "retrieved_sources": [
+        "04-rag-practice.md",
+        "04-rag-practice.md",
+        "05-incident-playbook.md"
+      ],
+      "cited_sources": [
+        "04-rag-practice.md"
+      ],
+      "retrieval_recall": 1.0,
+      "citation_recall": 1.0,
+      "elapsed": 8.024380083195865,
+      "error": "",
+      "judge": {
+        "score": 2,
+        "faithful": true,
+        "refused": false,
+        "reason": "回答完整覆盖解析、切块、检索top-k、生成并标注来源四个要点，所有细节均有引用片段支撑，无编造。"
+      }
+    },
+    {
+      "id": "q18",
+      "question": "切块有哪些原则?",
+      "category": "rag",
+      "must_refuse": false,
+      "answer": "我会在知识库中检索与切块原则相关的内容。**结论：知识库中明确列出了切块的五个原则，核心是块大小要适中、按结构切、保留重叠、记录位置。**\n\n**五个原则：**\n1. **块不能太大**：噪声多，命中后模型抓不到重点，还浪费 token [1]。\n2. **块不能太小**：语义不完整，“它”指代不明 [1]。\n3. **按结构切**：Markdown 按标题/段落，代码按函数，PDF 按页 [1]。\n4. **保留重叠**：跨块的句子不至于被腰斩 [1]。\n5. **记录位置**：没有行号/页码，引用就是假的，用户无法核对 [1]。\n\n**具体参数建议：** 按语义边界切成 500-1000 字的片段，块之间留 10%-20% 重叠 [2]。\n\n**补充背景：** 切块是 RAG 四步（解析、切块、检索、生成）中的第二步，而检索质量决定整个系统的上限 [2]。",
+      "retrieved_sources": [
+        "04-rag-practice.md",
+        "04-rag-practice.md",
+        "agent-lab-readme.md",
+        "04-rag-practice.md"
+      ],
+      "cited_sources": [
+        "04-rag-practice.md",
+        "04-rag-practice.md"
+      ],
+      "retrieval_recall": 1.0,
+      "citation_recall": 1.0,
+      "elapsed": 14.716292124707252,
+      "error": "",
+      "judge": {
+        "score": 2,
+        "faithful": true,
+        "refused": false,
+        "reason": "回答完整覆盖了块大小适中、按结构切、保留重叠、记录位置四个要点，且所有结论均有引用[1][2]支撑，无编造。"
+      }
+    },
+    {
+      "id": "q19",
+      "question": "为什么第一版 RAG 不直接用向量库?",
+      "category": "rag",
+      "must_refuse": false,
+      "answer": "我先检索一下知识库。**结论：第一版用 BM25 而不是向量库，是为了避免一开始就引入 embedding 服务和向量库带来的成本与复杂度，先用零依赖、可解释的方案上线，再根据真实查询决定是否加向量召回 [1]。**\n\n要点：\n\n- **向量检索的代价**：向量检索擅长语义相似（比如“报销流程”能命中“费用申请”），但需要 embedding 服务和向量库，成本和复杂度都上一个台阶 [1]。\n- **BM25 的优势**：纯词频统计，零依赖、可解释，中文用字级 bigram 就能跑，例如“知识库”切成“知识/识库”，查询同样切分即可精确命中 [1]。\n- **BM25 的短板**：对同义词不敏感，搜“缓存”不一定命中“cache” [1]。\n- **推荐策略**：先让 BM25 上线，收集真实 query，再决定要不要加向量召回和 rerank；不要一上来就搭 Pinecone + LangChain，最后发现 80% 的问题是文档没清洗 [1]。\n\n补充：知识库里另有一篇讲“为什么不用 LangChain”的取舍思路（学习阶段手写、生产阶段用框架），但那是关于 Agent 框架的，不是 RAG 检索选型，不能直接套用 [3]。",
+      "retrieved_sources": [
+        "04-rag-practice.md",
+        "04-rag-practice.md",
+        "06-interview-prep.md",
+        "05-incident-playbook.md",
+        "05-incident-playbook.md",
+        "agent-notes.md"
+      ],
+      "cited_sources": [
+        "04-rag-practice.md",
+        "06-interview-prep.md"
+      ],
+      "retrieval_recall": 1.0,
+      "citation_recall": 1.0,
+      "elapsed": 11.881755665875971,
+      "error": "",
+      "judge": {
+        "score": 2,
+        "faithful": true,
+        "refused": false,
+        "reason": "回答完整覆盖三个参考要点（BM25零依赖可解释低成本、向量检索需embedding服务和向量库、先上线收集真实query再决定加向量召回），所有结论均有引用[1]支撑，补充的LangChain说明也明确标注与本题无关，无编造。"
+      }
+    },
+    {
+      "id": "q20",
+      "question": "引用怎么做才可信?",
+      "category": "rag",
+      "must_refuse": false,
+      "answer": "我先检索一下知识库里关于引用、可信度、来源标注的内容。**结论：可信的引用靠“编号—片段—可展开来源”三者绑定，让幻觉可被审计，而不是靠模型自觉。**\n\n要点：\n\n1. **检索结果带唯一编号（cite）**，由工具返回给模型 [1]。\n2. **在 system prompt 里强制要求“每个结论后标 [n]”** [1]；生成阶段也要求模型只依据材料回答并标注来源 [5]。\n3. **服务端把编号和真实片段绑定**，前端展示可展开的来源 [1]。这样模型编造编号时，用户点开找不到内容，立刻能发现 [1]。\n4. **引用的目的是让幻觉可被审计**，不是装饰 [1]。\n5. **配套的评估指标**：忠实度（回答里每个论断能否在来源中找到）、拒答率（资料没有时敢说“不知道”）[2]。也就是说，引用可信度要靠测试集持续验证，而不是上线即完事 [2]。\n\n补充：解析阶段保留页码/行号，是后续能定位到具体来源的前提 [5]。\n\n如果你问的是“写回答时怎么引用才可信”这类操作规范，资料里没有单独讲；现有内容集中在 RAG 系统的引用机制设计上。",
+      "retrieved_sources": [
+        "04-rag-practice.md",
+        "04-rag-practice.md",
+        "06-interview-prep.md",
+        "06-interview-prep.md",
+        "04-rag-practice.md"
+      ],
+      "cited_sources": [
+        "04-rag-practice.md",
+        "04-rag-practice.md",
+        "04-rag-practice.md"
+      ],
+      "retrieval_recall": 1.0,
+      "citation_recall": 1.0,
+      "elapsed": 10.37914516730234,
+      "error": "",
+      "judge": {
+        "score": 2,
+        "faithful": true,
+        "refused": false,
+        "reason": "覆盖全部四个参考要点，引用[1][2][5]均能支撑相邻结论，无编造。"
+      }
+    },
+    {
+      "id": "q21",
+      "question": "评估 RAG 效果的三个指标是什么?",
+      "category": "rag",
+      "must_refuse": false,
+      "answer": "**结论：RAG 效果评估的三个指标是召回率、忠实度、拒答率 [1]。**\n\n要点：\n\n- **召回率**：该命中的块有没有进入 top-k。做法是构造 30 个问题并人工标注 [1]。\n- **忠实度**：回答里的每个论断是否能在来源中找到 [1]。\n- **拒答率**：资料里没有时，模型是否敢说“不知道”。这一项最容易被忽略 [1]。\n\n补充建议：上线前至少跑 30 条真实问题；上线后把“点了踩”的问题回流成测试集 [1]。\n\n另外，知识库里还有一份面试准备材料给出了另一组“三类指标”，角度不同，可作参考：任务成功率（固定 30 条问题人工判定）、引用准确率（回答里的 [n] 是否真能支撑该结论）、成本与延迟（每次对话 token 数、首 token 时间、P95 延迟）[2]。",
+      "retrieved_sources": [
+        "04-rag-practice.md",
+        "06-interview-prep.md",
+        "04-rag-practice.md",
+        "04-rag-practice.md",
+        "04-rag-practice.md",
+        "05-incident-playbook.md",
+        "06-interview-prep.md"
+      ],
+      "cited_sources": [
+        "04-rag-practice.md",
+        "06-interview-prep.md"
+      ],
+      "retrieval_recall": 1.0,
+      "citation_recall": 1.0,
+      "elapsed": 10.14339204179123,
+      "error": "",
+      "judge": {
+        "score": 2,
+        "faithful": true,
+        "refused": false,
+        "reason": "回答准确覆盖召回率、忠实度、拒答率三个要点，引用[1]可支撑，补充的[2]内容也有依据，无编造。"
+      }
+    },
+    {
+      "id": "q22",
+      "question": "线上接口大面积 500 应该按什么顺序排查?",
+      "category": "ops",
+      "must_refuse": false,
+      "answer": "我先检索一下知识库里的排查流程。**结论：按「时间线 → 错误分布 → 日志 → 资源 → 回滚」的顺序排查，不要一上来就重启 [1]。**\n\n要点：\n\n1. **看时间线**：确认 500 从几点开始，是否与最近一次发布、配置变更或数据库迁移对得上 [1]。\n2. **看错误分布**：区分是所有接口都 500，还是只有某个路由。全部挂通常指向依赖（数据库、Redis、下游 API）；单路由挂更像代码 bug [1]。\n3. **看日志**：先 grep `ERROR` 和 `Traceback` 确认异常类型——`ConnectionRefused` 是依赖没起来，`Timeout` 是下游慢，`KeyError` 是数据问题 [1]。\n4. **看资源**：CPU、内存、文件描述符、连接池。注意连接池打满的表现是「偶发超时」而不是 500，别把两者混为一谈 [1]。\n5. **回滚止损**：如果确认和发布相关，先回滚，再慢慢定位；不要在线上边查边改 [1]。\n\n补充：如果排查中发现是数据库连接耗尽（`too many connections`），手册另有处理顺序——先统计连接数和来源 IP 判断是泄漏还是流量上涨，再查未关闭的 session，临时提高上限只能止血，必须找到泄漏点 [1]。\n\n资料里没有提到针对 500 的自动化告警阈值、具体监控平台操作步骤或按业务线分级的应急响应流程；如果需要这些，得补充监控/告警配置类文档。",
+      "retrieved_sources": [
+        "05-incident-playbook.md",
+        "05-incident-playbook.md"
+      ],
+      "cited_sources": [
+        "05-incident-playbook.md"
+      ],
+      "retrieval_recall": 1.0,
+      "citation_recall": 1.0,
+      "elapsed": 12.856217416934669,
+      "error": "",
+      "judge": {
+        "score": 2,
+        "faithful": true,
+        "refused": false,
+        "reason": "回答完整覆盖时间线、错误分布、日志、资源、回滚五个要点，并明确说明资料未涉及告警阈值等内容，无编造。"
+      }
+    },
+    {
+      "id": "q23",
+      "question": "数据库连接耗尽应该怎么处理?",
+      "category": "ops",
+      "must_refuse": false,
+      "answer": "我先在知识库里检索一下相关内容。我再补充检索一下连接池的具体参数和 session 管理细节。## 结论\n\n知识库里有一份专门的故障处理手册，给出了数据库连接耗尽的处理顺序：先定位是泄漏还是流量上涨，再修泄漏点，最后用连接池上限和超时兜底。**单纯提高上限只能止血，不能算解决** [1]。\n\n## 处理要点\n\n**1. 先判断性质**\n统计当前连接数和来源 IP，确认是应用泄漏还是正常流量上涨 [1]。典型报错是 `too many connections`、`remaining connection slots are reserved` [1]。\n\n**2. 查代码里的连接泄漏**\n检查是否有未关闭的 session，异常分支最容易漏 [1]。\n\n**3. 临时止血**\n提高连接上限只能临时缓解，必须继续找到泄漏点 [1]。\n\n**4. 加防护**\n给连接池设上限和超时，避免一个慢查询拖垮全部连接 [1]。\n\n## 相关补充\n\n- 连接池打满在监控上的表现是「偶发超时」，而不是 500 [2]；排查大面积 500 时，连接池属于「看资源」这一步要检查的项（CPU、内存、文件描述符、连接池）[2]。\n- 反过来，如果现象是「接口变慢但没报错」，也要检查连接池配置：`pool_size` 太小会让请求排队，表现像「网络慢」[3]。\n\n## 资料缺口\n\n知识库只给了处理顺序和思路，**没有**具体的 `pool_size` / `max_overflow` / `pool_timeout` / `pool_recycle` 推荐数值，也没有针对具体框架（如 SQLAlchemy、asyncpg）的配置示例。如果你需要落地参数，还需要补充「连接池参数调优」或对应框架的配置文档。",
+      "retrieved_sources": [
+        "05-incident-playbook.md",
+        "05-incident-playbook.md",
+        "05-incident-playbook.md",
+        "agent-notes.md",
+        "06-interview-prep.md",
+        "agent-lab-readme.md",
+        "agent-notes.md"
+      ],
+      "cited_sources": [
+        "05-incident-playbook.md",
+        "05-incident-playbook.md",
+        "05-incident-playbook.md"
+      ],
+      "retrieval_recall": 1.0,
+      "citation_recall": 1.0,
+      "elapsed": 14.365645457990468,
+      "error": "",
+      "judge": {
+        "score": 2,
+        "faithful": true,
+        "refused": false,
+        "reason": "回答完整覆盖了统计连接数与来源IP、判断泄漏或流量上涨、检查未关闭session及异常分支、临时提高上限只能止血需找泄漏点、加连接池上限和超时等全部要点，且均有引用[1]支撑，补充内容也来自引用[2][3]，无编造。"
+      }
+    },
+    {
+      "id": "q24",
+      "question": "发布检查清单包含哪些关键项?",
+      "category": "ops",
+      "must_refuse": false,
+      "answer": "我会在知识库中检索发布检查清单。**发布检查清单共 5 项关键项** [1]：\n\n1. **数据库迁移可回滚，且在新代码之前执行** [1]\n2. **新配置有默认值，缺配置不会启动失败** [1]\n3. **关键接口有超时和重试上限** [1]\n4. **日志里不打印密钥、token、完整身份证号** [1]\n5. **回滚脚本演练过** [1]\n\n补充说明：这份清单出自《事故处理手册》（05-incident-playbook.md）的「发布检查清单」小节 [1]。同一文档的排查流程也强调，如果确认故障与发布相关，应先回滚止损，再定位问题，不要在线上边查边改 [3]。\n\n如果你需要的是 RAG 类应用的上线检查项，资料里另有一组评估指标（召回率、忠实度、拒答率，上线前至少跑 30 条真实问题）[2]，但那属于评估标准，不是发布检查清单本身。",
+      "retrieved_sources": [
+        "05-incident-playbook.md",
+        "04-rag-practice.md",
+        "05-incident-playbook.md",
+        "04-rag-practice.md"
+      ],
+      "cited_sources": [
+        "05-incident-playbook.md",
+        "04-rag-practice.md",
+        "05-incident-playbook.md"
+      ],
+      "retrieval_recall": 1.0,
+      "citation_recall": 1.0,
+      "elapsed": 12.495856374967843,
+      "error": "",
+      "judge": {
+        "score": 2,
+        "faithful": true,
+        "refused": false,
+        "reason": "回答完整覆盖全部五个参考要点，且每项均有引用[1]支撑，补充说明也有依据，无编造。"
+      }
+    },
+    {
+      "id": "q25",
+      "question": "事故复盘应该怎么写?",
+      "category": "ops",
+      "must_refuse": false,
+      "answer": "我先检索一下知识库里关于事故复盘的内容。## 结论\n\n知识库中有一份专门讲事故复盘写法的文档，核心原则是：**只写事实和机制，不写“某人粗心”**，目标是让同类事故不再发生，而不是找人背锅 [1]。\n\n## 复盘模板（四部分）\n\n1. **影响面**：多少用户、多长时间、哪些功能 [1]\n2. **时间线**：发现、止血、恢复、复盘 [1]\n3. **根因**：直接原因 + 深层原因（为什么测试没拦住）[1]\n4. **改进项**：每项有负责人和截止时间，优先做能自动化的 [1]\n\n## 补充说明\n\n- 写作纪律：避免归因到个人态度（如“粗心”），要落到可验证的机制层面 [1]。\n- 改进项必须可追踪：有 owner、有 deadline，并优先自动化，这样才不会停留在“下次注意” [1]。\n\n如果你需要更细的内容（比如时间线怎么记、止血决策如何留痕、复盘会议怎么开），资料里没有提到，还需要事故响应流程、值班手册或复盘会议规范这类文档。",
+      "retrieved_sources": [
+        "05-incident-playbook.md",
+        "06-interview-prep.md"
+      ],
+      "cited_sources": [
+        "05-incident-playbook.md"
+      ],
+      "retrieval_recall": 1.0,
+      "citation_recall": 1.0,
+      "elapsed": 6.621651832945645,
+      "error": "",
+      "judge": {
+        "score": 2,
+        "faithful": true,
+        "refused": false,
+        "reason": "覆盖全部四个参考要点，且引用[1]能支撑所有结论，无编造。"
+      }
+    },
+    {
+      "id": "q26",
+      "question": "面试时被问为什么不用 LangChain,应该怎么回答?",
+      "category": "interview",
+      "must_refuse": false,
+      "answer": "我先检索一下知识库里有没有相关内容。## 结论\n\n核心原则是：**不要贬低框架，要讲清取舍** [1]。回答的落点是「学习阶段故意手写一遍，生产阶段会选框架」，而不是「LangChain 不好」。\n\n## 回答要点\n\n**1. 先说明手写的动机：为了知道框架帮你做了什么**\n\n手写一遍，是为了搞清楚框架到底封装了哪些东西：消息拼装、工具 schema、流式增量、循环控制、错误回填 [1]。本质上 Agent 就是「带工具和消息状态的 while 循环」，骨架永远是那 10 行代码 [4][8]。\n\n**2. 再说明框架的价值：生产阶段会选它**\n\n框架帮你加的是持久化、并行、重试、可观测性、多 Agent 编排、人类审批 [8]；这些自己写成本很高，所以生产阶段会选框架 [1]。\n\n**3. 最后给出你的差异化优势：排障能力**\n\n手写过的人能直接定位到协议层：模型不调工具、参数 JSON 截断、流式 usage 丢失这类问题 [1]。这些坑在踩坑表里都有对应现象和原因，比如「模型一直不调工具」是工具描述太含糊、「工具参数 JSON 截断」是 `max_tokens` 太小、「流式没有 usage」是服务端不支持 `stream_options` [5]。\n\n**4. 可以补一句工程判断**\n\n同样的取舍逻辑也体现在检索选型上：先 BM25 上线、收集真实 query，再决定要不要加向量召回和 rerank，而不是一上来就搭 Pinecone + LangChain，最后发现 80% 的问题是文档没清洗 [3]。\n\n## 不要说的话\n\n- 不要说「用了大模型所以很智能」，面试官关心的是工程约束 [9]。\n- 不要说「提示词调了很久」，除非能说出可复现的对比方法 [9]。\n- 不要说「没有测试」，哪怕只有 10 条离线用例也比没有强 [9]。\n\n## 一句话版本\n\n「我用 Python 从零实现了一个 Agent：直连模型 API，手写 tool calling 的完整往返、SSE 流式解析和 Agent 循环，在此之上做了带引用的本地知识库问答，CLI 和 Web 两个入口，测试全部离线可跑。」[10]\n\n> 备注：资料里没有提到 LangChain 具体的版本问题、社区争议或替代框架对比，如果面试官追问到这一层，需要另外准备框架生态类的资料。",
+      "retrieved_sources": [
+        "06-interview-prep.md",
+        "05-incident-playbook.md",
+        "04-rag-practice.md",
+        "agent-lab-readme.md",
+        "agent-lab-readme.md",
+        "06-interview-prep.md",
+        "06-interview-prep.md",
+        "agent-notes.md",
+        "06-interview-prep.md",
+        "06-interview-prep.md"
+      ],
+      "cited_sources": [
+        "06-interview-prep.md",
+        "04-rag-practice.md",
+        "agent-lab-readme.md",
+        "agent-lab-readme.md",
+        "agent-notes.md",
+        "06-interview-prep.md",
+        "06-interview-prep.md"
+      ],
+      "retrieval_recall": 1.0,
+      "citation_recall": 1.0,
+      "elapsed": 36.86783841717988,
+      "error": "",
+      "judge": {
+        "score": 2,
+        "faithful": true,
+        "refused": false,
+        "reason": "回答覆盖了全部四个参考要点（不贬低框架、手写为理解封装、生产用框架因持久化/可观测/审批、手写利于协议层排障），且各结论均有引用片段支撑，无编造。"
+      }
+    },
+    {
+      "id": "q27",
+      "question": "Agent 项目怎么防 prompt injection?",
+      "category": "interview",
+      "must_refuse": false,
+      "answer": "我会先检索知识库，查找与 prompt injection 防护相关的内容。我再查看一下安全边界相关文档的完整内容。## 结论\n\n知识库里的做法是**分层防御**：把用户输入和工具返回都视为不可信内容，然后在工具层做沙箱和限制，在高风险动作上加入人工确认 [9]。\n\n## 要点\n\n**1. 信任边界：输入一律不可信**\n- 用户输入和工具结果（包括文件内容、网页、API 返回）都当作不可信内容处理 [9]。这是防间接注入的前提：注入指令往往藏在工具读回来的文本里，而不是用户直接说的话。\n\n**2. 文件工具沙箱**\n- `_resolve()` 先 `resolve()` 再 `is_relative_to()`，`../` 和软链接都逃不出根目录 [8]。\n- `.env`、`.git`、私钥后缀直接拒绝 [8][9]。\n- 沙箱根目录由 `ALLOWED_ROOT` 环境变量控制，默认当前目录 [1]。\n- 自测题里也专门问「用户让你读 `../../.ssh/id_rsa`，工具链会在哪一层拦住」[2]，说明拦截点设计在工具层，而不是靠模型自觉。\n\n**3. 计算工具不用 eval**\n- 用 AST 白名单求值，指数上限 1000，避免通过表达式执行任意代码 [8][9]。\n\n**4. 循环兜底**\n- `max_steps` 限制循环步数（默认 8），工具报错回填给模型而不是抛给用户 [8][1]。这能限制被注入后反复调用工具造成的损失。\n\n**5. 高风险动作人工确认**\n- 写文件、执行命令、付款这类动作必须人工确认 [9]。\n\n**6. 服务端边界**\n- 密钥只从环境变量读，`.env` 已进 `.gitignore` [8]；HTTP 服务按 session 存 Agent，生产环境要加鉴权和限流 [8]。\n\n## 资料不足的部分\n\n知识库里**没有**提到这些常见手段：输入/输出内容过滤与分类器、指令与数据的分隔标记（如把工具结果包在明确的定界符里）、双 LLM 校验、工具权限最小化白名单、注入检测评测集。如果需要这部分，得补充「LLM 应用安全」或「OWASP LLM Top 10」类的资料。",
+      "retrieved_sources": [
+        "agent-lab-readme.md",
+        "agent-notes.md",
+        "06-interview-prep.md",
+        "agent-lab-readme.md",
+        "04-rag-practice.md",
+        "agent-notes.md",
+        "03-uv-fastapi.md",
+        "agent-lab-readme.md",
+        "06-interview-prep.md",
+        "agent-lab-readme.md",
+        "06-interview-prep.md",
+        "agent-notes.md"
+      ],
+      "cited_sources": [
+        "agent-lab-readme.md",
+        "agent-notes.md",
+        "agent-lab-readme.md",
+        "06-interview-prep.md"
+      ],
+      "retrieval_recall": 1.0,
+      "citation_recall": 1.0,
+      "elapsed": 21.046535375062376,
+      "error": "",
+      "judge": {
+        "score": 2,
+        "faithful": true,
+        "refused": false,
+        "reason": "覆盖全部四个参考要点（不可信输入、文件沙箱与敏感文件拦截、AST 白名单不用 eval、高风险人工确认），引用[8][9]可支撑，额外补充均有出处或明确标注资料不足。"
+      }
+    },
+    {
+      "id": "q28",
+      "question": "公司今年的年假政策是几天?",
+      "category": "unanswerable",
+      "must_refuse": true,
+      "answer": "资料里没有提到公司年假政策。\n\n知识库目前只有 6 份文档，全部是技术类内容（uv/FastAPI、RAG 实践、事故处理手册、面试准备、agent 实验说明与笔记），没有任何人力资源或员工福利制度类文档。\n\n要回答这个问题，还需要补充这类资料：员工手册、考勤与休假管理制度、HR 政策通知（含当年年假天数、工龄折算规则、结转与清零规定等）。",
+      "retrieved_sources": [],
+      "cited_sources": [],
+      "retrieval_recall": 1.0,
+      "citation_recall": 1.0,
+      "elapsed": 11.441448791883886,
+      "error": "",
+      "judge": {
+        "score": 2,
+        "faithful": true,
+        "refused": true,
+        "reason": "回答明确说明资料中没有年假政策，未编造具体信息，并指出需补充HR类资料，符合资料无答案时的正确行为。"
+      }
+    },
+    {
+      "id": "q29",
+      "question": "这个项目作者的电话号码是多少?",
+      "category": "unanswerable",
+      "must_refuse": true,
+      "answer": "资料里没有提到这个项目作者的电话号码。\n\n我检索了「作者/联系方式/电话」「contact」「邮箱/维护者」等关键词，都没有命中；知识库现有 6 份文档（03-uv-fastapi.md、04-rag-practice.md、05-incident-playbook.md、06-interview-prep.md、agent-lab-readme.md、agent-notes.md），内容都是技术笔记与项目说明，其中没有作者的个人联系方式信息。\n\n如果你需要这类信息，还需要补充以下资料：项目的 README 或 pyproject.toml 中的作者字段（authors/maintainers）、LICENSE 或 CONTRIBUTING 文件，或者作者的个人主页/名片类文档。",
+      "retrieved_sources": [
+        "06-interview-prep.md",
+        "agent-lab-readme.md",
+        "03-uv-fastapi.md",
+        "06-interview-prep.md",
+        "03-uv-fastapi.md"
+      ],
+      "cited_sources": [],
+      "retrieval_recall": 1.0,
+      "citation_recall": 1.0,
+      "elapsed": 16.179397125262767,
+      "error": "",
+      "judge": {
+        "score": 2,
+        "faithful": true,
+        "refused": true,
+        "reason": "回答明确说明资料中没有作者电话号码，未编造具体信息，符合资料库无答案时的正确行为。"
+      }
+    },
+    {
+      "id": "q30",
+      "question": "kb-agent 的 Docker 镜像地址是什么?",
+      "category": "unanswerable",
+      "must_refuse": true,
+      "answer": "**资料里没有提到 kb-agent 的 Docker 镜像地址。**\n\n我检索了「kb-agent Docker 镜像地址」「镜像 registry 部署」「docker build image」「kb-agent」等关键词，知识库中没有任何关于 Docker 镜像、镜像仓库地址或容器化部署的内容。现有文档主要讲的是手写 Agent 的实现、uv/FastAPI 用法和面试准备 [1][4][6]。\n\n如果你需要这个信息，建议补充以下任一资料：\n- 项目的 README 或部署文档中关于 Docker/镜像仓库（如 Docker Hub、GHCR、私有 registry）的章节\n- CI/CD 配置文件（如 `.github/workflows/*.yml`）中 build/push 镜像的步骤\n- `Dockerfile` 或 `docker-compose.yml`\n\n另外提醒一下：知识库里也没有出现「kb-agent」这个名称本身，只有 `agent-lab` 项目 [1]，如果你指的是该项目的镜像，也请确认一下名称。",
+      "retrieved_sources": [
+        "agent-lab-readme.md",
+        "agent-lab-readme.md",
+        "06-interview-prep.md",
+        "06-interview-prep.md",
+        "agent-notes.md",
+        "03-uv-fastapi.md"
+      ],
+      "cited_sources": [
+        "agent-lab-readme.md",
+        "06-interview-prep.md",
+        "03-uv-fastapi.md"
+      ],
+      "retrieval_recall": 1.0,
+      "citation_recall": 1.0,
+      "elapsed": 11.51046745898202,
+      "error": "",
+      "judge": {
+        "score": 2,
+        "faithful": true,
+        "refused": true,
+        "reason": "回答明确说明资料中没有 Docker 镜像地址，未编造具体信息，并正确指出知识库中无 kb-agent 名称，符合资料无答案时的正确行为。"
+      }
+    }
+  ]
+}

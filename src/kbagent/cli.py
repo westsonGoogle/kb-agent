@@ -8,6 +8,7 @@ import os
 import re
 import shutil
 import sys
+from datetime import datetime
 from pathlib import Path
 
 from agentlab.config import Settings
@@ -16,6 +17,14 @@ from agentlab.llm import Usage
 from .agent import build_agent
 from .citations import CitationRegistry
 from .config import SUPPORTED_SUFFIXES, KBSettings
+from .eval import (
+    _fmt_pct,
+    default_meta,
+    evaluate,
+    load_questions,
+    summarize,
+    write_reports,
+)
 from .kb import KnowledgeBase
 
 USE_COLOR = sys.stdout.isatty() and not os.getenv("NO_COLOR")
@@ -273,6 +282,55 @@ def cmd_serve(args: argparse.Namespace) -> int:
     return 0
 
 
+def cmd_eval(args: argparse.Namespace) -> int:
+    dataset = Path(args.dataset)
+    questions = load_questions(dataset)
+    kb = KnowledgeBase(KBSettings.from_env())
+    settings = Settings.from_env()
+
+    now = datetime.now()
+    output = Path(args.out) if args.out else Path("reports") / f"eval-{now:%Y%m%d-%H%M%S}.md"
+    meta = default_meta(settings, kb, dataset, now.strftime("%Y-%m-%d %H:%M"))
+
+    def progress(index: int, total: int, result) -> None:
+        judge = result.judge
+        score = f"{judge.score}/2" if judge else "—"
+        recall = "—" if result.question.must_refuse else f"{result.retrieval_recall:.0%}"
+        print(
+            f"[{index:>2}/{total}] {result.question.id} 召回 {recall} "
+            f"分数 {score}  {result.question.question[:38]}",
+            flush=True,
+        )
+
+    results = evaluate(
+        kb,
+        settings,
+        questions,
+        limit=args.limit or None,
+        use_judge=not args.no_judge,
+        retries=args.retries,
+        progress=progress,
+    )
+    summary = summarize(results)
+    markdown_path, json_path = write_reports(results, markdown_path=output, meta=meta)
+
+    print()
+    refusal = summary["refusal_accuracy"]
+    refusal_text = f"{refusal:.1%}" if refusal is not None else "—"
+    score = summary["answer_score"]
+    score_text = f"{score:.2f}" if score is not None else "—"
+    print(
+        f"{_green('✓')} 来源召回 {_fmt_pct(summary['retrieval_recall'])} · "
+        f"引用召回 {_fmt_pct(summary['citation_recall'])} · "
+        f"回答分 {score_text}/2 · "
+        f"忠实度 {_fmt_pct(summary['faithfulness'])} · "
+        f"拒答准确 {refusal_text}"
+    )
+    print(_dim(f"报告 {markdown_path}"))
+    print(_dim(f"数据 {json_path}"))
+    return 0 if summary["errors"] == 0 else 1
+
+
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(prog="kb", description="带引用的本地知识库 Agent")
     subparsers = parser.add_subparsers(dest="command")
@@ -293,6 +351,13 @@ def build_parser() -> argparse.ArgumentParser:
     serve.add_argument("--port", type=int, default=8000)
     serve.add_argument("--reload", action="store_true")
 
+    evaluate = subparsers.add_parser("eval", help="跑评测集并生成报告")
+    evaluate.add_argument("--dataset", default="evals/questions.jsonl")
+    evaluate.add_argument("--out", default="", help="报告路径,默认 reports/eval-<时间>.md")
+    evaluate.add_argument("--limit", type=int, default=0, help="只跑前 N 条")
+    evaluate.add_argument("--no-judge", action="store_true", help="跳过 LLM 判分")
+    evaluate.add_argument("--retries", type=int, default=2, help="网关错误重试次数")
+
     return parser
 
 
@@ -307,6 +372,7 @@ def main(argv: list[str] | None = None) -> int:
         "docs": cmd_docs,
         "reindex": cmd_reindex,
         "serve": cmd_serve,
+        "eval": cmd_eval,
     }
     return handlers[command](args)
 

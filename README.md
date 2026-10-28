@@ -16,6 +16,7 @@
 - **引用可追溯**：每个结论带 `[n]`，点开就是文件名 + 行号/页码 + 原文片段
 - **CLI + Web 双入口**：Web 支持拖拽上传、流式输出、引用展开
 - **SQLite 持久化**：重启不丢索引
+- **可复现评测**：30 条固定问题，量化召回、引用、忠实度、拒答率
 - **离线测试**：不联网也能跑完整个测试集
 
 底层 Agent 循环来自同作者的另一个仓库
@@ -51,6 +52,7 @@ uv run kb docs                    # 看已索引文档和块数
 uv run kb ingest ~/notes/xxx.md   # 导入单个文件
 uv run kb ingest ~/notes/         # 导入整个目录（递归）
 uv run kb reindex                 # 重建索引（改过文件后用）
+uv run kb eval --limit 5          # 跑 5 条评测
 uv run pytest                     # 离线测试
 ```
 
@@ -159,12 +161,43 @@ src/kbagent/
 ├── citations.py   # 引用登记簿 + 查询相关片段
 ├── kb.py          # 存储/索引/检索门面
 ├── agent.py       # system prompt + 三个工具
-├── cli.py         # kb chat / ask / ingest / docs / reindex / serve
+├── eval.py        # 30 题评测:召回/引用/判分/拒答
+├── cli.py         # kb chat / ask / ingest / docs / reindex / serve / eval
 ├── server.py      # FastAPI + SSE
 └── web/index.html # 单文件 Web UI(无构建、无 CDN)
-tests/             # 离线测试(不联网、不需要 Key)
-data/docs/         # 示例文档
+evals/questions.jsonl  # 固定评测集
+evals/README.md        # 指标定义与判分口径
+reports/baseline.md    # 基线报告
+tests/                 # 离线测试(不联网、不需要 Key)
+data/docs/             # 示例文档
 ```
+
+---
+
+## 评测
+
+30 条固定问题（27 条可回答 + 3 条资料里没有），跑完整 Agent 流程后自动算分：
+
+```bash
+mkdir -p /tmp/kb-eval-data/docs
+cp data/docs/*.md /tmp/kb-eval-data/docs/
+KB_DATA_DIR=/tmp/kb-eval-data uv run kb reindex
+KB_DATA_DIR=/tmp/kb-eval-data uv run kb eval --out reports/baseline.md
+```
+
+基线（`deepseek-v4.1-flash`，6 份文档 / 56 个片段）：
+
+| 指标 | 数值 |
+| --- | ---: |
+| 来源召回率 | 100% |
+| 引用召回率 | 100% |
+| 回答质量（0-2） | 1.96 / 2 |
+| 忠实度 | 100% |
+| 拒答准确率 | 100% |
+| 接口错误率 | 0% |
+
+指标定义、判分 rubric、已知局限见 [`evals/README.md`](evals/README.md)，
+逐题结果见 [`reports/baseline.md`](reports/baseline.md)。
 
 ---
 
@@ -192,7 +225,7 @@ uv run pytest
 ## Roadmap
 
 - 混合检索：BM25 + embedding + RRF 融合
-- 小型评测集：30 条问题，量化召回率 / 忠实度 / 拒答率
+- 评测扩充到 100+ 题，并用不同模型交叉判分
 - 多租户与文档级权限（检索前过滤）
 - 引用高亮到具体句子，而不只是行号
 - Docker Compose 一键部署
