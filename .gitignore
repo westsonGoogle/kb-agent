@@ -1,0 +1,24 @@
+.env
+.env.*
+!.env.example
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+dist/
+build/
+*.egg-info/
+data/*.db
+data/*.db-*
+data/*.db-wal
+data/*.db-shm
+# 只公开示例文档;用户自己上传的文件一律不进仓库
+data/docs/*
+!data/docs/03-uv-fastapi.md
+!data/docs/04-rag-practice.md
+!data/docs/05-incident-playbook.md
+!data/docs/06-interview-prep.md
+!data/docs/agent-notes.md
+!data/docs/agent-lab-readme.md
+.DS_Store
